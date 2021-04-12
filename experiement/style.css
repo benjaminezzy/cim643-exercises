@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+.lightswitch {
+    text-align: center;
+}
+
+#dark {
+    background-color: #2e2f30;
+    text-decoration-color: #d8e9f0;
+    font-family: 'Dela Gothic One', cursive;
+    font-size: medium;
+}
+
+#light {
+    background-color: #f5f378;
+    text-decoration-color: #111212;
+    font-family: 'Dela Gothic One', cursive;
+    font-size: x-large;
+}
+
 .label {
     display: flex;
 
