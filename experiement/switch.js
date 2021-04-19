@@ -1,16 +1,11 @@
-let allDots = document.getElementsByClassName('dot');
-const dots = Array.from(allDots);
 
-for (let i = 0; i < dots.length; i++) {
-  dots[i].addEventListener('click', makeActive2);
-}
 
 function makeActive() {
   console.log(this.id);
-  if (this.id == 'dot2') {
-    const dot1 = document.getElementById('dot1');
-    dot1.classList.remove('dot_active');
-    this.classList.add('dot_active');
+  if (this.id == 'switch') {
+    const dot1 = document.getElementById('switch');
+    dot1.classList.remove('switch_active');
+    this.classList.add('switch_active');
   } else {
     console.log('hi');
   }
@@ -18,14 +13,14 @@ function makeActive() {
 
 function makeActive2() {
   const aClassList = Array.from(this.classList);
-  console.log(aClassList, aClassList.includes('dot_active'));
+  console.log(aClassList, aClassList.includes('switch_active'));
 
-  if (aClassList.includes('dot_active')) {
+  if (aClassList.includes('switch_active')) {
     console.log('hi again');
   } else {
-    let previouslyActive = document.getElementsByClassName('dot_active');
-    previouslyActive[0].classList.remove('dot_active');
-    this.classList.add('dot_active');
+    let previouslyActive = document.getElementsByClassName('switch_active');
+    previouslyActive[0].classList.remove('switch_active');
+    this.classList.add('switch_active');
 
 
     let hidden = document.getElementsByClassName('hidden');
